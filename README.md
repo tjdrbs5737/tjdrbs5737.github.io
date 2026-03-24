@@ -3,142 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>데일리 와이드 스웨트 팬츠 | 공식 스토어</title>
+    <title>프리미엄 헤비웨이트 스웨트 팬츠</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .sticky-nav { position: sticky; top: 0; background: white; z-index: 50; border-bottom: 1px solid #eee; }
+    </style>
 </head>
-<body class="bg-white">
+<body class="text-gray-900 leading-tight">
 
-    <section class="max-w-6xl mx-auto px-4 py-10">
-        <div class="flex flex-col md:flex-row gap-10">
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-16">
+        <div class="flex flex-col md:flex-row gap-12">
             
-            <div class="w-full md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1552066344-2464c9732689?q=80&w=1200" 
-                     alt="메인 상품 이미지" class="w-full rounded-lg shadow-sm border border-gray-100">
-                <div class="flex gap-2 mt-4">
-                    <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=200" class="w-20 h-20 object-cover rounded border cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=200" class="w-20 h-20 object-cover rounded border cursor-pointer opacity-50 hover:opacity-100">
+            <div class="w-full md:w-[55%] space-y-4">
+                <img src="https://images.unsplash.com/photo-1552066344-2464c9732689?auto=format&fit=crop&q=80&w=1000" 
+                     class="w-full rounded-xl shadow-lg" alt="상품 메인">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&q=80&w=500" class="rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=500" class="rounded-lg">
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 flex flex-col">
-                <nav class="text-sm text-gray-400 mb-2">하의 > 스웨트팬츠</nav>
-                <h1 class="text-3xl font-bold mb-4 text-gray-900">[무료배송] 헤비웨이트 와이드 조거 스웨트 팬츠</h1>
-                
-                <div class="flex items-center gap-3 mb-6 font-bold">
-                    <span class="text-red-500 text-2xl">25%</span>
-                    <span class="text-3xl text-gray-900">36,750원</span>
-                    <span class="text-gray-400 line-through font-normal text-lg">49,000원</span>
+            <div class="w-full md:w-[45%] flex flex-col justify-start">
+                <div class="mb-6">
+                    <span class="inline-block bg-black text-white text-[10px] px-2 py-1 mb-3">BEST SELLER</span>
+                    <h1 class="text-3xl font-black mb-2 tracking-tighter text-slate-900">헤비웨이트 와이드 테리 스웨트 팬츠</h1>
+                    <p class="text-gray-500 text-sm">탄탄한 고중량 원단으로 완성한 압도적 실루엣</p>
                 </div>
 
-                <div class="space-y-4 border-t border-b py-6 border-gray-100 mb-6">
-                    <div class="flex justify-between text-sm">
-                        <span class="text-gray-500">배송정보</span>
-                        <span class="text-gray-900 font-medium">내일 출발 (14시 이전 주문 시)</span>
-                    </div>
-                    <div class="flex justify-between text-sm">
-                        <span class="text-gray-500">포인트적립</span>
-                        <span class="text-gray-900 font-medium">최대 3,675원 적립</span>
-                    </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="text-3xl font-bold text-blue-600 tracking-tighter">30%</span>
+                    <span class="text-3xl font-bold tracking-tighter">34,300원</span>
+                    <span class="text-xl text-gray-300 line-through">49,000원</span>
                 </div>
 
-                <div class="space-y-4 mb-8">
+                <div class="space-y-6 border-t border-gray-100 pt-8">
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">컬러 선택</label>
-                        <select class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
-                            <option>선택하세요</option>
-                            <option>멜란지 그레이 (재고있음)</option>
-                            <option>블랙 (재고있음)</option>
-                            <option>오트밀 (품절)</option>
-                        </select>
+                        <label class="block text-xs font-bold text-gray-400 mb-3 uppercase tracking-widest">Select Color</label>
+                        <div class="flex gap-3">
+                            <button class="w-10 h-10 rounded-full bg-gray-400 border-2 border-black ring-2 ring-offset-2 ring-black"></button>
+                            <button class="w-10 h-10 rounded-full bg-black"></button>
+                            <button class="w-10 h-10 rounded-full bg-stone-200"></button>
+                        </div>
                     </div>
+
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">사이즈 선택</label>
-                        <div class="flex gap-2 text-sm">
-                            <button class="border px-4 py-2 hover:bg-black hover:text-white transition">S</button>
-                            <button class="border px-4 py-2 hover:bg-black hover:text-white transition">M</button>
-                            <button class="border px-4 py-2 hover:bg-black hover:text-white transition">L</button>
+                        <label class="block text-xs font-bold text-gray-400 mb-3 uppercase tracking-widest">Select Size</label>
+                        <div class="grid grid-cols-3 gap-2 text-sm font-bold">
+                            <button class="border py-4 hover:bg-black hover:text-white transition rounded">M</button>
+                            <button class="border py-4 hover:bg-black hover:text-white transition rounded">L</button>
+                            <button class="border py-4 bg-gray-50 text-gray-300 cursor-not-allowed rounded" disabled>XL (품절)</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex gap-2 mt-auto">
-                    <button class="flex-1 bg-white border border-black py-4 font-bold text-black hover:bg-gray-50">장바구니</button>
-                    <button class="flex-[2] bg-black text-white py-4 font-bold hover:bg-gray-800">바로 구매하기</button>
+                <div class="mt-10 flex flex-col gap-3">
+                    <button class="w-full bg-black text-white py-5 font-black text-lg hover:bg-gray-800 transition rounded-lg">
+                        BUY NOW (바로 구매)
+                    </button>
+                    <div class="flex gap-3">
+                        <button class="flex-1 border border-gray-200 py-4 font-bold text-gray-700 hover:bg-gray-50 transition rounded-lg">장바구니</button>
+                        <button class="flex-1 border border-gray-200 py-4 font-bold text-gray-700 hover:bg-gray-50 transition rounded-lg">위시리스트</button>
+                    </div>
                 </div>
+
+                <p class="text-xs text-center text-gray-400 mt-6 font-medium">전 지역 무료 배송 · 7일 이내 자유로운 반품 가능</p>
             </div>
         </div>
-    </section>
+    </main>
 
-    <div class="sticky top-0 bg-white border-b z-40">
-        <div class="max-w-4xl mx-auto flex">
-            <a href="#detail" class="flex-1 py-4 text-center font-bold border-b-2 border-black">상세설명</a>
-            <a href="#size" class="flex-1 py-4 text-center text-gray-400 hover:text-black transition">사이즈</a>
-            <a href="#review" class="flex-1 py-4 text-center text-gray-400 hover:text-black transition">리뷰(1,240)</a>
+    <nav class="sticky-nav">
+        <div class="max-w-4xl mx-auto flex text-sm font-bold">
+            <a href="#content" class="flex-1 py-5 text-center border-b-2 border-black text-black">DETAIL</a>
+            <a href="#guide" class="flex-1 py-5 text-center text-gray-400">GUIDE</a>
+            <a href="#review" class="flex-1 py-5 text-center text-gray-400">REVIEWS</a>
         </div>
-    </div>
+    </nav>
 
-    <article id="detail" class="max-w-4xl mx-auto px-4 py-20 space-y-10">
-        <div class="text-center space-y-4">
-            <h3 class="text-2xl font-light tracking-widest text-gray-500 uppercase">Premium Sweat Series</h3>
-            <p class="text-4xl font-bold">매일 입고 싶은 완벽한 밸런스</p>
-            <p class="text-gray-600 leading-loose">
-                수십 번의 샘플링 끝에 탄생한 최적의 와이드 실루엣입니다.<br>
-                탄탄한 헤비 테리 원단을 사용하여 무릎 늘어남 현상을 획기적으로 줄였습니다.
-            </p>
-        </div>
-
-        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1200" alt="상세1" class="w-full">
-        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1200" alt="상세2" class="w-full">
+    <article id="content" class="max-w-4xl mx-auto py-20 px-4 space-y-24">
         
-        <div class="bg-gray-100 p-10 rounded-2xl">
-            <h4 class="text-xl font-bold mb-6">CHECK POINT</h4>
-            <ul class="space-y-4 text-gray-700">
-                <li class="flex items-start gap-3">
-                    <span class="bg-black text-white px-2 py-0.5 text-xs rounded mt-1 font-bold">01</span>
-                    <span><strong>950g 헤비 테리 원단:</strong> 묵직한 중량감으로 고급스러운 핏을 연출합니다.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="bg-black text-white px-2 py-0.5 text-xs rounded mt-1 font-bold">02</span>
-                    <span><strong>덤블 워싱 가공:</strong> 세탁 후 변형 및 수축을 최소화했습니다.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="bg-black text-white px-2 py-0.5 text-xs rounded mt-1 font-bold">03</span>
-                    <span><strong>밴딩 & 스트링:</strong> 체형에 맞게 조절 가능한 이중 웨이스트 마감.</span>
-                </li>
-            </ul>
+        <div class="text-center space-y-6">
+            <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600">01. FABRIC</h2>
+            <p class="text-5xl font-black tracking-tighter">무게감이 만드는<br>압도적 실루엣</p>
+            <p class="text-gray-500 max-w-lg mx-auto leading-relaxed">평범한 쭈리 원단이 아닙니다. 야드당 950g의 고중량 원단으로 제작되어, 세탁 후에도 형태가 무너지지 않고 묵직하게 떨어지는 핏을 선사합니다.</p>
+            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=1200" class="w-full rounded-3xl mt-10">
         </div>
 
-        <img src="https://images.unsplash.com/photo-1552066344-2464c9732689?q=80&w=1200" alt="상세3" class="w-full">
-
-        <div id="size" class="pt-20 border-t">
-            <h3 class="text-xl font-bold mb-6 italic">SIZE INFO</h3>
-            <table class="w-full border-t border-black text-sm text-center">
-                <tr class="bg-gray-50 border-b">
-                    <th class="p-4">사이즈(cm)</th>
-                    <th>허리</th>
-                    <th>허벅지</th>
-                    <th>밑위</th>
-                    <th>총장</th>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-4 font-bold uppercase">Medium</td>
-                    <td>35-46</td>
-                    <td>33</td>
-                    <td>31</td>
-                    <td>104</td>
-                </tr>
-                <tr class="border-b">
-                    <td class="p-4 font-bold uppercase">Large</td>
-                    <td>37-48</td>
-                    <td>35</td>
-                    <td>32</td>
-                    <td>106</td>
-                </tr>
-            </ul>
+        <div class="grid md:grid-cols-2 gap-10 items-center bg-gray-50 p-10 rounded-[3rem]">
+            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&q=80&w=600" class="rounded-2xl shadow-xl">
+            <div class="space-y-4">
+                <h2 class="text-sm font-bold tracking-[0.3em] text-blue-600">02. SEWING</h2>
+                <h3 class="text-3xl font-black italic">"CRAFTMANSHIP"</h3>
+                <p class="text-gray-500 leading-relaxed font-medium">프리미엄 브랜드에서만 사용하는 갈라삼봉 공법을 적용했습니다. 허리 밴드부터 밑단까지 이질감 없는 부드러운 착용감을 보장합니다.</p>
+            </div>
         </div>
+
+        <div class="space-y-4">
+            <img src="https://images.unsplash.com/photo-1552066344-2464c9732689?auto=format&fit=crop&q=80&w=1200" class="w-full rounded-2xl">
+            <p class="text-center text-gray-400 text-sm italic">Model: 184cm / 72kg (Wearing L size)</p>
+        </div>
+
     </article>
 
-    <div class="h-40"></div>
+    <footer class="bg-black text-white py-20 px-4 text-center">
+        <p class="text-2xl font-black tracking-tighter mb-4">G-M-N BRAND SHOP</p>
+        <p class="text-gray-500 text-xs">Copyright © 2026. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
